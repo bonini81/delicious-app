@@ -1,0 +1,60 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+Thumbs.db
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment variables (SECURITY & PRIVACY: never commit these)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# Note: You can commit an .env.example file if you want to share a template
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Editor / IDE settings (Privacy: keeps your local workspace settings private)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Security / Certificates / Keys (SECURITY: never commit these)
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+secrets.json
