@@ -5,10 +5,16 @@ This version has breaking changes — APIs, conventions, and file structure may 
 <!-- END:nextjs-agent-rules -->
 
 <!-- BEGIN:project-context -->
-## Project Context & Tech Stack
+## Project Context & Domain
+- **App:** Personal bookmarking application (similar to delicious.com).
+- **Domain:** Private user data requiring authentication. All routes should be protected except for the Login page.
+
+## Tech Stack
 - **Framework:** Next.js (App Router)
 - **Language:** TypeScript
-- **Styling:** [Specify your styling solution here, e.g., Tailwind CSS, CSS Modules]
+- **Backend:** Express.js (REST API decoupling)
+- **Database & Auth:** Firebase (Firestore & Firebase Authentication)
+- **Hosting:** Firebase Hosting
 
 ## Coding Standards & Conventions
 - **React/Next.js:** Default to Server Components. Only use `"use client"` at the top of the file when React hooks (`useState`, `useEffect`), context, or browser DOM APIs are strictly required.
